@@ -1,0 +1,224 @@
+@import "./variables";
+@import "./tabs-frame-motion.scss";
+.sbc-header {
+	width: 100%;
+    
+    height: 100%;
+    // height: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.sbc-header__main-menu {
+	width: 100%;
+	height: var( --sbc-header__main-menu--height );
+	display: flex;
+	justify-content: "space-around";
+	position: "relative";
+	transition: "1s";
+    // height: $header-height + $border-width;
+	// height: 30px;	
+	
+}
+
+
+.sbc-header__main-menu__container {
+	width: 100%;
+	height: 100%;
+	left: 0;
+    right: 0;
+	display: flex;
+	padding-left: 60px;
+	// background-image: linear-gradient(-90deg, rgba(62,210,195,0.79) 0%, rgba(7,167,249,0.79) 100%);
+}
+
+.sbc-header__outline-menu {
+	width: 100%;
+	display: flex;
+	height: var( --sbc-header__outline-menu--height );
+	// padding-left: 60px;
+	background-color: rgba( 100,149, 237, 1 );
+	transition: 1s;
+	justify-content: flex-end;
+	// place-items: c;
+}
+.sbc-header__outline-menu > header {
+	background: rgba(63, 81, 181, 0.7);
+	box-shadow: none;
+}
+
+.components-tab-panel__tabs-item {
+	height: 100%;
+	.components-button.components-tab-panel__tabs-item {
+		height: 100%;
+	}
+}
+
+.tab-content {
+	height: 100%;
+}
+
+.tab-pane {
+	height: 100%;
+}
+.sbc-header__main-menu__brand {
+	
+}
+.sbc-header__main-menu__container {
+
+}
+
+.sbc-nav__item {
+	// @extend .nav-item;
+	// background-color: rgb(69, 130, 243);
+	min-height: 30px !important;
+}
+
+.sbc-nav__link {
+	// @extend .nav-link;
+	padding: 0.11rem 1rem;
+	border-radius: unset;
+}
+
+.sbc-nav__item--outline {
+	height: 30px;
+	min-height: 30px;
+}
+
+.interface-interface-skeleton__header {
+	height: var( --interface-interface-skeleton__header--height );
+	border-bottom: 0.5px solid rgba(0, 0, 0, 0.7);
+	transition: 1s;
+}
+
+.interface-interface-skeleton__body {
+	height: calc(100% - 30px);
+	overflow: hidden;
+}
+.sbc-tab__pane {
+	height: 100%;
+}
+
+.interface-interface-skeleton__sidebar {
+	top: var( --interface-interface-skeleton__header--height );
+}
+.entities-saved-states__panel {
+	top: 60px;
+}
+.interface-interface-skeleton__content{
+	overflow-y: auto;
+	height: inherit;
+	top: var( --interface-interface-skeleton__header--height );
+	// overflow: -moz-hidden-unscrollable;
+}
+
+.edit-site-header-toolbar__block-toolbar {
+
+}
+.block-editor-block-toolbar {
+
+}
+
+@media screen and (max-width: 782px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-height: 480px), screen and (max-width: 450px) {
+}
+
+
+@media screen and (max-width: 600px) {
+}
+
+
+@media only screen and (max-width: 320px) {
+}
+
+@media (min-width:600px) {
+	.block-editor-block-toolbar {
+	 overflow:-moz-hidden-unscrollable;
+	}
+	.edit-site-header-toolbar__block-toolbar {
+		top: 115px;
+	}
+	
+
+   }
+
+@media (min-width:600px) {
+	.block-editor-block-toolbar {
+		overflow:-moz-hidden-unscrollable;
+	   }
+	.edit-site-header-toolbar__block-toolbar {
+		top: 115px;
+	}
+}
+
+.edit-site-navigation-toggle {
+	top: var( --edit-site__navigation-toggle-button );
+	transition: 1s ease-in-out;
+	background-color: rgb(248, 219, 52);
+}
+
+.components-button.edit-site-navigation-toggle__button.has-icon {
+	background-color: rgb(248, 219, 52);
+}
+
+
+.edit-post-header {
+	height: 40px !important;
+}
+.sb-edit-site-header {
+	display: flex;
+}
+// body.is-fullscreen-mode .edit-site-header
+// @media (min-width:782px) { }
+
+// @if (#design.sbc-tab__pane.tab-pane.fade.active.show) {
+
+// }
+.sbc-tab__pane.tab-pane.fade.active.show {
+	.edit-site-header { 
+		display: none;
+	}
+	
+}
+#design.sbc-tab__pane.tab-pane.fade.active.show {
+	.edit-site-header {
+		display: block;
+	}
+	
+}
+
+.interface-interface-skeleton__secondary-sidebar {
+	top: var( --interface-interface-skeleton__header--height );
+}
+
+.sbc-tabs__container {
+	height: 100%;
+}
+
+.sbc-edit-site-header {
+	display: none;
+}
+
+.edit-site-header {
+	// display: flex;
+	height: var( --edit-post-menu-height ) !important;
+	// display: none;
+}
+
+
+
+// include theme component
+
+@import "./components/Theme.scss";
+@import "./components/Style.scss";
+
+.sbc-tabs__outline-menu {
+	min-height: 30px !important;
+	height: var( --sbc-header__outline-menu--height );
+}
+

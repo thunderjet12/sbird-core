@@ -1,0 +1,13 @@
+$edit-post-menu-height: 40px;
+:root {   
+    --sbc-header__main-menu--height: 50px;
+    --sbc-header__outline-menu--height: 50px;
+    --edit-post-menu-height: 40px;
+    --interface-interface-skeleton__header--height: var(--sbc-header__main-menu--height) + var(--sbc-header__outline-menu--height) 
+                                                    + var( --edit-post-menu-height );
+    --edit-site__navigation-toggle-button: 30px;
+}
+
+$sbc-admin__tab--bg: rgba( 229, 240, 255,  1);
+$sbc-admin__styles--bg: rgba( 229, 240, 255,  1);
+$sbc-admin__panel--bg: rgba( 255, 255, 255, 1);

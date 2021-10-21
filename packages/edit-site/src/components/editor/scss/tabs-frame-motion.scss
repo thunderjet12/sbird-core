@@ -1,0 +1,98 @@
+.sbc-tabs__container {
+	overflow-y: hidden;
+	box-shadow: none;
+}
+
+.sbc-tabs__navigation-container {
+    display: flex;
+    
+}
+
+.sbc-tabs__list {
+    display: block;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.sbc-tabs__item-button {
+    white-space: nowrap;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    user-select: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    box-shadow: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    padding: 10px 1rem;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: none;
+    text-overflow: ellipsis;
+    line-height: 1.5;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: tomato;
+    margin: 0px;
+    overflow: hidden;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.sbc-tabs__item-button--active {
+    color:aqua;
+}
+
+.sbc-tabs__slider-bar {
+    height: 4px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    margin-left: 2px;
+    margin-right: 2px;
+    bottom: 0;
+    position: absolute;
+    background: #08e;
+}
+
+// tabs content
+
+.sbc-tabs__tab-content__container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+}
+
+.sbc-tabs__tab-content__animated-container {
+    flex-direction: row;
+    direction: ltr;
+    will-change: transform;
+    min-height: 0;
+    flex: 1;
+    display: flex;
+}
+
+
+.sbc-tabs__tab-content__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-self: stretch;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    height: 100%;
+    overflow: hidden;
+    outline: none;
+}
+
+
